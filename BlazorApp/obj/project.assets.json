@@ -1152,11 +1152,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\OneDrive\\Pulpit\\BLAZOR\\BlazorApp\\BlazorApp.csproj",
+      "projectUniqueName": "C:\\studia\\2 semestr\\wybrane środowiska programowania\\Blazor-calculator\\BlazorApp\\BlazorApp.csproj",
       "projectName": "BlazorApp",
-      "projectPath": "C:\\Users\\user\\OneDrive\\Pulpit\\BLAZOR\\BlazorApp\\BlazorApp.csproj",
+      "projectPath": "C:\\studia\\2 semestr\\wybrane środowiska programowania\\Blazor-calculator\\BlazorApp\\BlazorApp.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\OneDrive\\Pulpit\\BLAZOR\\BlazorApp\\obj\\",
+      "outputPath": "C:\\studia\\2 semestr\\wybrane środowiska programowania\\Blazor-calculator\\BlazorApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

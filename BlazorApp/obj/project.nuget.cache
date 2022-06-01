@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HjA+URmzVGlDTlmnbAHB5CQbv6pgOC1SscjtDWOFXQOQyDnr/p/wcvjyK4RXcf/8xC+lZUZWVozc4FBcH3Y/nw==",
+  "dgSpecHash": "95E1XlcEDIr4IkOolZe6Ue1aa/6RoPtDpsNLZK40PoEf5khQi1pI24WmkKpH387C+9rOYopZYogRY2qy/VmJYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\OneDrive\\Pulpit\\BLAZOR\\BlazorApp\\BlazorApp.csproj",
+  "projectFilePath": "C:\\studia\\2 semestr\\wybrane środowiska programowania\\Blazor-calculator\\BlazorApp\\BlazorApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.11\\microsoft.aspnetcore.authorization.5.0.11.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.11\\microsoft.aspnetcore.components.5.0.11.nupkg.sha512",

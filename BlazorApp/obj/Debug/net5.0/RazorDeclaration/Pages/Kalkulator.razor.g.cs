@@ -83,20 +83,60 @@ using BlazorApp.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\studia\2 semestr\wybrane środowiska programowania\Blazor-calculator\BlazorApp\Pages\Index.razor"
+#line 2 "C:\studia\2 semestr\wybrane środowiska programowania\Blazor-calculator\BlazorApp\Pages\Kalkulator.razor"
 using BlazorApp.Components;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/kalkulator")]
+    public partial class Kalkulator : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 23 "C:\studia\2 semestr\wybrane środowiska programowania\Blazor-calculator\BlazorApp\Pages\Kalkulator.razor"
+       
+    string opcja = "/";
+    string ktora;
+
+
+    async Task operacja()
+    {
+        if (opcja == "1")
+        {
+            ktora = "+";
+            opcja = "+";
+        }        
+        else if (opcja == "2")
+        {
+            ktora = "-";
+            opcja = "-";
+        }  
+        else if (opcja == "3")
+        {
+            ktora = "*";
+            opcja = "*";
+        }         
+        else if (opcja == "4")
+        {
+            ktora = "/";
+            opcja = "/";
+        }
+        else
+        {
+            await JS.InvokeVoidAsync("showError", opcja);
+            return;
+        }   
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JS { get; set; }
     }
 }
 #pragma warning restore 1591

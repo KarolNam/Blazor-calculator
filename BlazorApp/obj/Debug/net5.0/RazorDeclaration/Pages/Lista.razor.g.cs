@@ -83,20 +83,53 @@ using BlazorApp.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\studia\2 semestr\wybrane środowiska programowania\Blazor-calculator\BlazorApp\Pages\Index.razor"
+#line 1 "C:\studia\2 semestr\wybrane środowiska programowania\Blazor-calculator\BlazorApp\Pages\Lista.razor"
 using BlazorApp.Components;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/lista")]
+    public partial class Lista : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 49 "C:\studia\2 semestr\wybrane środowiska programowania\Blazor-calculator\BlazorApp\Pages\Lista.razor"
+       
+    private List<User> users;
+    private User nowy = new User();
+    private string fn;
+    private string ln;
+    private string FirstName {get; set;}
+    private string LastName {get; set;}
+
+    protected override void OnInitialized()
+    {
+        users = new List<User>
+            {
+                new User(){Id = 1, FirstName = "Adam", LastName = "Mickiewicz"}
+            };
+    }
+    void AddUser()
+    {
+        var nowy = new User();
+        {
+            Id = users.Max(u => u.Id) + 1;
+            FirstName = fn;
+            LastName = ln;
+        }
+        users.Add(nowy);
+        nowy.FirstName = nowy. LastName = string.Empty;
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

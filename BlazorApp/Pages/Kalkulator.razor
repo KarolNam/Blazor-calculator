@@ -1,0 +1,56 @@
+@inject IJSRuntime JS
+@using BlazorApp.Components
+@page "/kalkulator"
+
+<h1>Kalkulator</h1>
+Dostępne operacje:
+1 - Dodawanie
+2 - Odejmowanie
+3 - Mnożenie
+4 - Dzielenie
+
+
+<div class="form-group">
+    <label>Jaką operację chcesz wykonać?</label>
+    <input type="text" class="form-control" @bind-value="@opcja"/>
+</div>
+<div class="form-group mt-3">
+    <button class="btn btn-primary" @onclick="operacja">Zatwierdź</button>
+</div>
+<Calculator Operation="@ktora"/>
+
+
+@code {
+    string opcja = "/";
+    string ktora;
+
+
+    async Task operacja()
+    {
+        if (opcja == "1")
+        {
+            ktora = "+";
+            opcja = "+";
+        }        
+        else if (opcja == "2")
+        {
+            ktora = "-";
+            opcja = "-";
+        }  
+        else if (opcja == "3")
+        {
+            ktora = "*";
+            opcja = "*";
+        }         
+        else if (opcja == "4")
+        {
+            ktora = "/";
+            opcja = "/";
+        }
+        else
+        {
+            await JS.InvokeVoidAsync("showError", opcja);
+            return;
+        }   
+    }
+}
